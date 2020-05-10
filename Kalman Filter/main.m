@@ -1,3 +1,4 @@
+% Ö÷º¯Êý
 clc;clear;
 T=(1:20);
 Z=[1.9945,1.9794,1.9554,1.9214,1.8777,1.8250,1.7598,1.6867,1.6036,1.5092,1.4076,1.2944,1.1724,1.0399,0.8980,0.7455,0.5850,0.4125,0.2318,0.0399];
@@ -19,18 +20,13 @@ for i=2:20
 end
 
 figure(1);
-plot(T,V,'blue');
-hold on;
-plot(T,Xk(1,:),'red');
-hold on;
+plot(T,V,'blue');hold on;
+plot(T,Xk(1,:),'red');hold on;
 legend('true','kalman');
 title('velocity');
 figure(2);
-plot(T,Y,'blue');
-hold on;
-plot(T,Z,'*');
-hold on;
-plot(T,Xk(2,:),'red');
-hold on;
+plot(T,Y,'blue');hold on;
+plot(T,Z,'*');hold on;
+plot(T,Xk(2,:),'red');hold on;
 legend('true','measure','kalman');
 title('height');
